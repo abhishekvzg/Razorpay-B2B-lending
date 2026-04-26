@@ -223,7 +223,7 @@ export const NachForm = () => {
 
         <div
           data-testid="callout-weekly"
-          className="hidden md:flex absolute right-2 top-[295px] translate-x-[105%] bg-red-100 text-red-700 px-3 py-1.5 rounded-md shadow border border-red-200 font-sans text-xs font-semibold items-center gap-1.5 z-10"
+          className="hidden md:flex absolute right-3 top-[295px] bg-red-100 text-red-700 px-3 py-1.5 rounded-md shadow border border-red-200 font-sans text-xs font-semibold items-center gap-1.5 z-20"
         >
           <ArrowRight className="h-3.5 w-3.5 rotate-180" />
           Weekly — aligned to your sales cycle
@@ -239,7 +239,7 @@ export const NachForm = () => {
 
         <div
           data-testid="callout-stamp"
-          className="hidden md:flex absolute right-2 bottom-2 translate-x-[105%] bg-orange-100 text-orange-700 px-3 py-1.5 rounded-md shadow border border-orange-200 font-sans text-xs font-semibold items-center gap-1.5 z-10"
+          className="hidden md:flex absolute right-3 bottom-3 bg-orange-100 text-orange-700 px-3 py-1.5 rounded-md shadow border border-orange-200 font-sans text-xs font-semibold items-center gap-1.5 z-20"
         >
           <ArrowRight className="h-3.5 w-3.5 rotate-180" />
           Company stamp required
