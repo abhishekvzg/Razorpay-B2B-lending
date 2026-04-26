@@ -21,7 +21,6 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-sm text-slate-600">
           <a href="#features" className="hover:text-slate-900 transition-colors" data-testid="nav-features">Overview</a>
           <a href="#journey" className="hover:text-slate-900 transition-colors" data-testid="nav-journey">How it works</a>
-          <a href="#faq" className="hover:text-slate-900 transition-colors" data-testid="nav-faq">FAQ</a>
           <a href="#documents" className="hover:text-slate-900 transition-colors" data-testid="nav-docs">Documents</a>
         </div>
 
