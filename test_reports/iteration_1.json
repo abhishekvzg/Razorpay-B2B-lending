@@ -1,0 +1,28 @@
+{
+  "summary": "Frontend-only smoke + visual rendering test on Razorpay Capital Auto Dealer NACH onboarding prototype at 1440x900. All 33 data-testid elements render and are visible. All required textual content (hero, features, journey steps 1-5, NACH mandate form, FAQ, repayment cycle, documents, CTA footer) is present. FAQ accordion default-open + toggle behavior works. Anchor nav clicks scroll to journey & faq sections. Zero console errors on load. NACH form Step 3 centerpiece renders with all 4 colored callouts (green/blue/orange/red) and required fields (UMRN, RZRPY00001, CREATE checked, RAZORPAY CAPITAL PRIVATE LIMITED, IFSC HDFC0001234, WEEKLY highlighted red, signature boxes, stamp box).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Step 3 NACH form (1440px)", "issues": ["Right-side callouts 'Weekly — aligned to your sales cycle' and 'Company stamp required' use translate-x-[105%] which pushes them partially off the right viewport edge at 1440px wide; text gets clipped (e.g. 'Weekly — alig...'). Consider moving callouts inside the form or reducing translate offset, or constrain the parent container max-width with extra right padding so callouts remain visible. Left-side callouts render fine."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Optional: fix right-side NACH callouts being clipped on 1440-wide viewports (visual polish, not functional)."
+  ],
+  "critical_code_review_comments": [
+    "All components clean, well-structured, files <500 lines.",
+    "All interactive elements have data-testid - good testability.",
+    "No backend usage as expected; all CTAs are #-anchors.",
+    "Right callouts on NachForm.jsx use translate-x-[105%] which overflows at typical desktop widths - visual clipping at viewport edge."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "test_credentials": "N/A - no auth",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Pure static frontend prototype, no backend. All testids verified at 1440x900. Only minor visual polish item: right NACH callouts clip at viewport edge."
+}
