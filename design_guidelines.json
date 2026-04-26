@@ -1,0 +1,76 @@
+{
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast) - Fintech Authority",
+  "colors": {
+    "background": "0 0% 100%",
+    "foreground": "222.2 47.4% 11.2%",
+    "primary": "221.2 83.2% 53.3%",
+    "primary-foreground": "0 0% 100%",
+    "accent": "144.3 50.3% 47.3%",
+    "accent-foreground": "0 0% 100%",
+    "muted": "210 40% 98%",
+    "muted-foreground": "215.4 16.3% 46.9%",
+    "border": "214.3 31.8% 91.4%",
+    "card": "0 0% 100%",
+    "card-foreground": "222.2 47.4% 11.2%"
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Inter",
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight text-slate-900",
+      "h3": "text-xl md:text-2xl font-semibold text-slate-900",
+      "body": "text-base text-slate-600 leading-relaxed",
+      "small": "text-sm text-slate-500"
+    }
+  },
+  "layout": {
+    "spacing_system": "Generous spacing. Sections should have py-20 md:py-32. Internal container padding p-6 md:p-8.",
+    "bento_grid": "For features, use grid-cols-1 md:grid-cols-3 gap-6 or gap-8."
+  },
+  "components": {
+    "pill_badge": "inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200",
+    "primary_button": "bg-[#2563EB] hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-sm inline-flex items-center justify-center",
+    "feature_card": "bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition-all flex flex-col items-start gap-4",
+    "stepper_layout": "grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto",
+    "stepper_nav": "lg:col-span-4 lg:sticky lg:top-32 space-y-4",
+    "stepper_content": "lg:col-span-8 space-y-32",
+    "nach_form_container": "bg-white border-2 border-slate-300 p-6 sm:p-8 rounded-xl shadow-sm font-mono text-xs relative text-slate-800",
+    "digit_box": "w-7 h-9 sm:w-8 sm:h-10 border border-slate-400 flex items-center justify-center font-bold text-slate-800 bg-white shadow-sm",
+    "callout_green": "absolute bg-green-100 text-green-700 px-3 py-1.5 rounded-md shadow border border-green-200 font-sans text-xs font-semibold flex items-center gap-1.5 z-10",
+    "callout_blue": "absolute bg-blue-100 text-blue-700 px-3 py-1.5 rounded-md shadow border border-blue-200 font-sans text-xs font-semibold flex items-center gap-1.5 z-10",
+    "callout_orange": "absolute bg-orange-100 text-orange-700 px-3 py-1.5 rounded-md shadow border border-orange-200 font-sans text-xs font-semibold flex items-center gap-1.5 z-10",
+    "callout_red": "absolute bg-red-100 text-red-700 px-3 py-1.5 rounded-md shadow border border-red-200 font-sans text-xs font-semibold flex items-center gap-1.5 z-10"
+  },
+  "images": {
+    "hero_showroom": {
+      "url": "https://images.pexels.com/photos/20131971/pexels-photo-20131971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "High-end black sports car showcased in a modern indoor showroom setting with ambient lighting.",
+      "category": "hero"
+    },
+    "step1_person": {
+      "url": "https://images.pexels.com/photos/7698738/pexels-photo-7698738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Side view of a man typing on a laptop, analyzing financial data in an indoor office setting.",
+      "category": "content"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page React app focusing purely on frontend execution. Use pure HTML/Tailwind for custom layouts, and Shadcn for standard components.",
+    "Install `lucide-react` for icons and `framer-motion` for subtle scroll animations. Install Google Fonts 'Outfit' and 'Inter'.",
+    "HERO SECTION: A premium B2B fintech layout. Left column: 'New: Physical NACH Mandate' pill badge, large H1, description, and CTA. Right column: The 'hero_showroom' image with polished borders and subtle shadow.",
+    "FEATURES SECTION: 3 cards showing 'Large Credit Lines up to ₹15 cr', 'Weekly Repayment', 'Secure Physical Mandate'. Use minimalist Lucide icons (e.g. Banknote, Calendar, Shield).",
+    "5-STEP JOURNEY (CORE): Build a Sticky Scroll section. Left side: Steps 1 to 5 title navigation. Right side: Large mockup cards representing each step.",
+    "STEP 1 MOCK: Application form UI showing data fields (PAN, GSTIN) with a tooltip 'Auto-filled from GST data'.",
+    "STEP 2 MOCK: A drag-and-drop document upload box showing 'Aadhar' and 'PAN' files with green checkmarks.",
+    "STEP 3 MOCK (MOST IMPORTANT): Build a realistic Physical NACH mandate form mockup in HTML/CSS. Title: UMRN. Use an array of consecutive square `digit_box` classes for Account Number and IFSC fields. Include checkbox squares for Frequency (Monthly/Weekly). Add absolute positioned callouts: green (pre-filled by Razorpay), blue (signature here), orange (stamp area), red (Weekly frequency). Add a 'Documents Checklist' below it.",
+    "STEP 4 MOCK: A split-screen OCR scanner card. Left side: 'Scanned Document' with a CSS animated laser line. Right side: Status steps with 'Submitted to NPCI' marked complete.",
+    "STEP 5 MOCK: A dashboard view showing '₹8,00,00,000' approved limit using a semi-circle meter (or large typography) and a weekly schedule layout.",
+    "FAQ SECTION: Implement a simple Accordion for the 3 questions specified.",
+    "WEEKLY REPAYMENT CYCLE: Build a circular diagram with 4 nodes connected by arrows to represent the continuous credit cycle.",
+    "DOCUMENTS CHECKLIST: A neat two-column grid listing required onboarding documents, using green check icons.",
+    "FOOTER: Dark navy (#0F172A) background, primary and outline buttons, simple copyright/links.",
+    "Ensure ALL buttons, accordion toggles, and major inputs have a `data-testid` attribute (e.g., `data-testid=\"hero-cta\"`).",
+    "Follow the High-Contrast Swiss Fintech Archetype: crisp borders, ample white space, deep navy text for authority, and Razorpay blue/green strictly for interactive/success states."
+  ]
+}
