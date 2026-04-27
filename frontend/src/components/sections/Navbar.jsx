@@ -7,6 +7,10 @@ export const Navbar = () => {
       data-testid="top-navbar"
       className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 border-b border-slate-200/70"
     >
+      <div className="bg-amber-50 border-b border-amber-200/80 px-4 py-2 text-center text-[11px] font-medium text-amber-900">
+        Prototype only. This is not an official Razorpay website.
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-2" data-testid="nav-logo">
           <div className="h-8 w-8 rounded-lg bg-[#2563EB] flex items-center justify-center text-white font-bold font-display">
